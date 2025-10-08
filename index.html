@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="menu">
+      <a href="#section1">inicio </a>
+      <a href="#section2">Produtos</a>
+      <a href="#section3">sobre</a>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="section" id="section1">
+      <img
+        src="https://images.cults3d.com/P3NsuuykIpln67ZVR77EEa16FsU=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/28511630/illustration-file/88d5c0a3-dda0-424e-9be5-23c6cfaa6202/Barbie-Logo-PNG-Image.png"
+        width="200px"
+        height="200px"
+      />
+      <h2>Leticia Fonseca</h2>
+
+      <h2>Desenvolvedor Web</h2>
+      <p>
+        Bem - vindos, Divas e Divos ao meu portifólio! Aqui voce encontra alguns
+        dos meus
+      </p>
+      <p>projetos e um pouco da minha trajetoria como progamadora.</p>
+      <div class="bottom">
+        <a href="bottom"> divas house </a>
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <h2>PROJETOS</h2>
+      <a> conteudo seção 2 </a>
+      <div class="card-container">
+        <div class="card">
+          <h2>Portifolio PESSOAL</h2>
+          <p> meu site de apresentação profissional com informaçoes e projetos</p>
+          <div class="bottom">
+          <a href="bottom">ver projeto</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>loja virtual</h2>
+          <a> prototico de e-ecommence com carrinho de compras java script</a>
+           <div class="bottom">
+          <A href="bottom">ver projeto</A>
+        </div>
+        </div>
+
+        <div class="card">
+          <h2>Dashboard Dados</h2>
+          <a> Painel iniciativo para vizualizaçaõ de metricas e graficos</a>
+          <div class="bottom">
+          <a href="bottom">ver projeto</a>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+
+    <div class="section" id="section3">
+      <h2>CONTATO</h2>
+      <a> Entre em contato comigo pela whatsAPP preenchendo o formulario abaixo : </a>
+
+        <div class = "form-contato">
+          <input type= "text" id= "nome"
+            class= "name" placeholder= "digite seu nome">
+         </div>
+
+        <div class = "form-contato">
+          <input type= "text" id= "email"
+            class= "email" placeholder="digite seu email">
+        </div>
+
+
+        <div class = "form-contato">
+          <input type= "text" id= "mensagem"
+             class= "text" placeholder="digite sua mensagem">
+        </div>
+        <button class="whats" type="sumit" id="whatbutton">Enviar no whatsapp</button>
+         </form>
+        <div class="social-links">
+          <p>Me siga nas minhas redes sociais:</p>
+          <a href= "https://www.youtube.com/" target="-_blank">Youtube</a>
+          <a href="https://www.instagram.com/" target= "_blank">Instragram</a>
+          <a href= "https://www.facebook.com/?locale=pt_BR" target="_blank">Facebook</a>
+
+        </div>  
+      
+    </div>
+
+    <script>
+      document.getElementById("whatbutton").onclick = function (e){
+        //e.preventDefault() ;
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const mensagem = document.getElementById("mensagem").value;
+
+        const texto = `ola, meu nome é ${nome} (${email} e gostaria de falar: ${mensagem})`;
+        const url =  `https://wa.me/5527999146798?text=${encodeURIComponent(texto)}`;
+
+        window.open(url, "_blank")
+      }
+     </script>
+  </body>
+</html>
