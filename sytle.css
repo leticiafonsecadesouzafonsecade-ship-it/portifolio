@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu {
+
+  background-color: #ce2785;
+  padding: 25px;
+  text-align: center;
+  position: fixed;
+
+  left: 0;
+  Right: 0;
+  z-index: 100px;
+}
+
+#menu a {
+  color: #ffc2f4;
+  margin: 0 15px;
+  /*0 = Sup e Inf 15px = laterais*/
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.section {
+  padding: 100px 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+#section1 {
+  background-color: #FCBBEE;
+
+}
+
+#section2 {
+  background-color: white;
+}
+
+#section3 {
+  padding-top: 100px;
+
+  background-color: #FCBBEE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#section1 button {
+  border: none;
+  padding-bottom: 10pxx 30px 5px;
+  font-size: 15px;
+  margin-top: 15px;
+  background-color: #ED02CB;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+
+}
+
+.card {
+  display: inline-block;
+  width: 270px;
+  height: 200px;
+  background-color: pink;
+  border-radius: 5px;
+  padding: 25px;
+
+  color: #ED0CC2;
+  transition: tranform;
+}
+
+.bottom a {
+  background-color: #D60FA7;
+  color: white;
+  padding-bottom: 10px 30px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px white(0, 0, 0.2);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 100px
+}
+
+.bottom {
+  margin-top: 50px;
+}
+
+.name {
+  width: 300px;
+  border: 15px;
+  padding: 15px;
+  margin: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.email {
+
+  width: 300px;
+  border: 15px;
+  padding: 15px;
+  margin: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.text {
+
+  width: 300px;
+  border: 15px;
+  padding: 15px;
+  margin: 2px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.whats {
+  padding-top: 2px;
+  padding-left: 2px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #E50BC5;
+  width: 100px;
+  height: 40px;
+
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
